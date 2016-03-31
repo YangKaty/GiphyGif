@@ -55,7 +55,7 @@ function getGiphyGifs(query, callback) {
     limit: 25,
     // jQuery will sanitize the query, e.g. " " because "+".
     q: query,
-  }
+  };
 
   $.get(endpoint, parameters).done(function(response) {
     callback(response.data);
